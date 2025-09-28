@@ -44,12 +44,12 @@ A Spring Boot RESTful API that aggregates weather data from multiple sources, pr
 git clone <(https://github.com/bharathb-r/WeatherApi.git)>
 cd weather-api
 
-**Configure API Keys**
+## Configure API Keys
 
 The project uses OpenWeather and WeatherAPI.
 You need to create your own API keys and replace the placeholders in:
 src/main/resources/application.properties
-# Replace these with your actual keys
+## Replace these with your actual keys
 openweather.api.key=YOUR_OPENWEATHER_KEY
 weatherapi.api.key=YOUR_WEATHERAPI_KEY
 ⚠️ Important: Without valid API keys, the endpoints will return errors.
@@ -65,10 +65,11 @@ WeatherApiApplication.java
 
 The service will start on http://localhost:8080 by default.
 
-API Documentation (Swagger UI)
+## API Documentation (Swagger UI)
 Once the application is running, you can access Swagger UI for interactive API docs:
 http://localhost:8080/swagger-ui.html
-Testing with Postman
+
+## Testing with Postman
 You can use Postman to test all endpoints. Example requests:
 
 Current Weather:
@@ -84,7 +85,7 @@ Health Check:
 GET http://localhost:8080/health
 Make sure your API keys are configured correctly in application.properties.
 
-Approach / Notes
+## Approach / Notes
 Aggregates data from multiple weather providers using Spring WebClient
 Implements caching with Caffeine to reduce redundant API calls
 Uses Bucket4j for rate limiting
