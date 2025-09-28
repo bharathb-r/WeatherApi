@@ -50,7 +50,8 @@ The project uses OpenWeather and WeatherAPI.
 You need to create your own API keys and replace the placeholders in:
 src/main/resources/application.properties
 ## Replace these with your actual keys
-openweather.api.key=YOUR_OPENWEATHER_KEY
+openweather.api.key=YOUR_OPENWEATHER_KEY,
+
 weatherapi.api.key=YOUR_WEATHERAPI_KEY
 ⚠️ Important: Without valid API keys, the endpoints will return errors.
 
