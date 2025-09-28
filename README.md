@@ -41,10 +41,11 @@ A Spring Boot RESTful API that aggregates weather data from multiple sources, pr
 
 ### Clone the Repository
 
-```bash
-git clone <your-repo-link>
+git clone <(https://github.com/bharathb-r/WeatherApi.git)>
 cd weather-api
-Configure API Keys
+
+**Configure API Keys**
+
 The project uses OpenWeather and WeatherAPI.
 You need to create your own API keys and replace the placeholders in:
 src/main/resources/application.properties
